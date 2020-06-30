@@ -157,6 +157,7 @@ const getTarea =(key)=>{
          form.titulo.value = request.result.titulo;
          form.prioridad.value = request.result.prioridad;
          form.agregar.dataset.action ="update";
+         form.agregar.textContent = "Actualizar Tarea";
       }
 
 
@@ -176,6 +177,7 @@ const updateTarea = (tarea)=>{
 request.onsuccess =()=>{
 
   form.agregar.dataset.action == "add";
+  form.agregar.textContent ="Guardar"
 
 
 }
@@ -220,6 +222,7 @@ if(e.target.agregar.dataset.action == "add"){
      addTarea(tarea);
 }else if(e.target.agregar.dataset.action == "update"){
      updateTarea(tarea);
+
 }
    
 

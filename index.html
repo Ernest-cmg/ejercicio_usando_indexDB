@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>INDEX DB</title>
+	
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<div class="container">
+         
+         <header id="header" class=" mt-4">
+
+         	<div class="row">
+         		<div class="col-md-6 mx-auto">
+         			<h1 class="text-center">Control de Tareas Diarias</h1>
+         			
+         		</div>
+         		
+         	</div>
+         	
+         </header><!-- /header -->
+
+
+<main class="main mt-4 ">
+	<div class="row">
+		<div class="col-md-4 mt-4 mx-auto">
+			<div class="card bg-dark">
+				<div class="card-header">
+					<h2 class="text-white text-center">Agregar Tarea</h2>
+				</div>
+				<div class="card-body">
+					<form class="form" id="form" >
+						<div class="form-group">
+							<input type="text" name="titulo" class="form-control" placeholder="Titulo de la tarea" id="titulo" required>
+						</div>
+						<div class="form-group">
+						<select id="selectPrioridad" class="form-control" name="prioridad" required>
+                                 <option selected>Escoger...</option>
+                                 <option>Baja</option>
+                                    <option>Normal</option>
+                                    <option>Alta</option>
+                                  </select>
+						</div>
+						
+						<div class="form-group">
+							<button class="btn btn-success btn-block" name="agregar" data-action="add" id="add">Guardar</button>
+							
+						</div>
+						
+					</form>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+		
+		
+	</div>
+	
+</main>
+
+
+
+
+
+
+<section class="Elementos mt-4">
+	<div class="row">
+		<div class="col-md-4 mx-auto">
+			<h2>Listado de Tareas</h2>
+			
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-md-8 mx-auto" id="divListaTareas">
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+
+		
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>	
+    <script src="javascript.js" type="text/javascript" charset="utf-8" async defer></script>
+    
+</body>
+</html>

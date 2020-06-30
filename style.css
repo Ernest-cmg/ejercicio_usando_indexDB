@@ -1,0 +1,61 @@
+body{
+	background: gray;
+
+}
+.inputFile{
+	cursor: pointer;
+}
+.eliminar{
+	width: 150px;
+	height: 40px;
+	background: blue;
+	border-radius: 30px;
+	text-align: center;
+	padding: 10px;
+	float: right;
+}
+
+.listaTareas{
+	cursor: pointer;
+	font-size: 20px;
+
+}
+
+
+.tareasFinalizadas{
+	cursor: pointer;
+	font-size: 20px;
+	margin-bottom: 30px;
+	height: 500px;
+
+}
+
+.hover{
+	 font-size: 30px;
+	 color: red;
+	
+}
+
+.hoverEliminar{
+	width: 150px;
+	height: 40px;
+	border-radius: 30px;
+	text-align: center;
+	padding: 10px;
+	float: right;
+	background: red;
+}
+
+.cardBody{
+	margin: 10px;
+	padding: 10px;
+	font-size: 20px;
+
+}
+.cardBody button{
+	float: right;
+	
+}
+.cardHeader{
+  font-size: 30px;
+}

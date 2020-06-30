@@ -172,6 +172,14 @@ const updateTarea = (tarea)=>{
  const objectStore = transaction.objectStore("tareas");
 
  const request = objectStore.put(tarea);
+
+request.onsuccess =()=>{
+
+  form.agregar.dataset.action == "add";
+
+
+}
+
  readTarea();  
 
 }

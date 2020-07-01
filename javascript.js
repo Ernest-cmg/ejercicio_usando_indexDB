@@ -186,6 +186,22 @@ request.onsuccess =()=>{
 
 }
 
+////delete tarea
+
+const deleteTarea = (key)=>{
+      
+  const transaction = db.transaction(["tareas"], "readwrite");
+
+ const objectStore = transaction.objectStore("tareas");
+
+ const request = objectStore.delete(key);
+
+request.onsuccess =()=>{
+ readTarea();  
+  
+  }
+}
+
 
 
 
@@ -237,6 +253,8 @@ if(e.target.agregar.dataset.action == "add"){
 divLista.addEventListener("click",(e)=>{
   if(e.target.dataset.type =="update"){
          getTarea(e.target.dataset.key);
+  }else if(e.target.dataset.type == "delete"){
+        deleteTarea(e.target.dataset.key);
   }
    
 });
